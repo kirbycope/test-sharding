@@ -12,7 +12,7 @@ A mobile device one runs one app at a time, so unlike Web we cannot run multiple
 ![Test Sharding](/test_sharding.png)
 
 ## Running Tests
-** Work In Progress **
 1. Run `python3 sandbox` or `python3 sandbox {dir}`
+  - This will scan the current or given directory for `.feature` files. For each one it finds, it spins up a new command window and runs `behave --junit --include=` plus the feature name.
 
-This will scan the current or given directory for `.feature` files. For each one it finds, it spins up a new command window and runs `behave --junit --include=` plus the feature name.
+**ToDo**: Handle results
