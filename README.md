@@ -7,7 +7,7 @@ Split up tests by Feature and run concurrently.
 > When the test corpus is large or the execution time becomes long, we offer the possibility of splitting the tests across several devices: sharding. - [Source](https://source.android.com/docs/core/tests/tradefed/architecture/advanced/sharding)
 
 ### How Does This Help Testing?
-A mobile device one runs one app at a time, so unlike Web we cannot run multiple tests on a single device at once. What we can do is run a subset of tests on seperate devices. We ditribute the test load by `.feature` file and run each in a seperate thread.
+A mobile device one runs one app at a time, so unlike desktop we cannot run multiple tests on a single device at once. What we can do is run a subset of tests on seperate devices. We ditribute the test load by `.feature` file and run each in a seperate thread.
 
 ![Test Sharding](/test_sharding.png)
 
